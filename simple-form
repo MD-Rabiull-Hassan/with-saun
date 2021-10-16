@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<title>SENIOR DEVELOPER SAUN</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.area{
+				width: 1200px;
+				height: 500px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			.form_box_1{
+				width: 700px;
+				background: #b7ced5;
+				padding: 100px 50px;
+				border-radius: 5px;
+				padding-right: 150px;
+				display: inline-block;
+			}
+			.grid_area{
+				display: grid;
+				grid-template-columns: 50% 50%;
+				grid-column-gap: 20px;
+			}
+			label{
+				font-weight: bold;
+			}
+			.form-control{
+				width: 100%;
+				border: 2px solid gray;
+				padding: 15px 12px;
+				margin-top : 10px;
+				text-align: center;
+				border-radius: 5px;
+			}
+			.form-control:focus-visible {
+				outline: 0px;
+				background: #f3eeee;
+				color: black;
+			}
+			.sambol{
+				font-size: 18px;
+				padding: 5px 11px;
+				position: absolute;
+				top: 30px;
+				left: 2px;
+				background: white;
+				line-height: 37px;
+				color: gray;
+				border-right: 2px solid gray;
+				border-radius: 5px 0px 0px 5px;
+				font-weight: bold;
+			}
+			.box1, .box2, .box3{
+				position: relative;
+			}
+			.box3{
+				margin: auto;
+				margin-top: 50px;
+				width: 250px;
+			}
+			.sambol2{
+				height: 47px;
+				width: 33px;
+				background: white;
+				color: gray;
+				border-left: 2px solid gray;
+				position: absolute;
+				top: 30px;
+				right: 2px;
+				padding: 13px;
+				padding-left: 8px;
+				border-radius: 0px 5px 5px 0px;
+				font-weight: bold;
+			}
+			.btn{
+				margin-top: 35px;
+				padding: 15px 35px;
+				font-weight: 700;
+				border: 0px;
+				border-radius: 100px;
+				background: #2196f3;
+				color: white;
+				cursor: pointer;
+				transition: .5s;
+			}
+			.btn:hover{
+				transform: scale(1.1);
+			}
+			
+			/* Result CSS */
+			
+			.result{
+				display: inline-block;
+				background: white;
+				box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+				padding: 20px 30px;
+				min-width: 520px;
+				height: 351px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				margin-left: -40px;
+			}
+			.item_grid{
+				display: grid;
+				grid-template-columns: 80% auto;
+				grid-column-gap: 5px;
+				margin-top: 35px;
+			}
+			.item_grid P{
+				padding-left: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="area">
+			<div class="form_box_1">
+				<form class="form_area">
+					<div class="grid_area">
+						<div class="box1">
+							<label>Hourly Pay Rate</label>
+							<input type="number" class="form-control" placeholder="0.0" id="rate">
+							<span class="sambol">$</span>
+						</div>
+						<div class="box2">
+							<label>State</label>
+							<select class="form-control" id="state">
+								<option>Select State</option>
+							</select>
+						</div>
+					</div>
+					<div class="box3">
+						<label>Margin</label>
+						<input type="number" class="form-control" placeholder="20.00" id="margin">
+						<span class="sambol2">%</span>
+					</div>
+					<div style="text-align: center;">
+						<button class="btn">Calculate</button>
+					</div>
+				</form>
+			</div>
+			
+			<!-- Result -->
+			
+			<div class="result">
+				<p style="text-align: center; font-weight: bold; margin-bottom: 50px;">Employer Texs</p>
+				
+				<div class="item_grid">
+					<p>Social Security Tex</p>
+					<span>$</span>
+				</div>
+				<div class="item_grid">
+					<p>Social Security Tex</p>
+					<span>$</span>
+				</div>
+				<div class="item_grid">
+					<p>Social Security Tex</p>
+					<span>$</span>
+				</div>
+				<br><br>
+				<div style="background: black; height: 2px;"></div>
+				<div class="item_grid">
+					<p>Total Selary</p>
+					<span>$</span>
+				</div>
+				<br><br>
+			</div>
+		</div>
+	</body>
+</html>
