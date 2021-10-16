@@ -23,7 +23,7 @@
 				background: #b7ced5;
 				padding: 100px 50px;
 				border-radius: 5px;
-				padding-right: 150px;
+				padding-right: 120px;
 				display: inline-block;
 			}
 			.grid_area{
@@ -111,6 +111,7 @@
 				bottom: 0;
 				margin: auto;
 				margin-left: -40px;
+				border-radius: 5px;
 			}
 			.item_grid{
 				display: grid;
